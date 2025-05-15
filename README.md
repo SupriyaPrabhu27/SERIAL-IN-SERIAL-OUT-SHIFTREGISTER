@@ -1,4 +1,8 @@
-# SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
+## NAME : SUPRIYA PRABHU
+## REGISTER NO : 212224240165
+
+
+# EXP 10 : SERIAL IN SERIAL OUT SHIFTREGISTER
 
 **AIM:**
 
@@ -29,14 +33,35 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:
+              module EXP10(clk, sin, q);
+              input clk;
+              input sin;
+              output [3:0] q;
+              reg [3:0] q;
+              always @(posedge clk)
+              begin
+              q[0] <= sin;
+              q[1] <= q[0];
+              q[2] <= q[1];
+              q[3] <= q[2];
+              end
+              endmodule
 
-*/
+
+
+
 
 **RTL LOGIC FOR SISO Shift Register**
 
+![WhatsApp Image 2025-05-15 at 20 02 37_5b4634c5](https://github.com/user-attachments/assets/0dab9082-0a1c-4a0a-a28b-e414304e71b1)
+
+
 **TIMING DIGRAMS FOR SISO Shift Register**
 
+![WhatsApp Image 2025-05-15 at 20 02 53_db4bd14d](https://github.com/user-attachments/assets/093df981-c9fb-4b11-8146-eed369742096)
+
+
 **RESULTS**
+
+Thus the SISO Shift Register using verilog is validated and the logic diagrams are designedd the truth table is verified.
